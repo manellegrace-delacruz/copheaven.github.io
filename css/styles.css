@@ -1,0 +1,411 @@
+/* font-family: 'Lekton', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Overpass', sans-serif; */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: #add8e6;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav a {
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  margin: -63px auto;
+  padding: 7px;
+  background: #add8e6;
+}
+
+nav img {
+  float: left;
+  margin: -8px;
+  margin-left: 5px;
+  width: 6%;
+}
+
+
+nav ul li {
+  display: inline-block;
+  font-family: 'Mulish', sans-serif;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .1s;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #646E78;
+  height: 1px;
+}
+
+nav.fill ul li a {
+  transition: all 1.5s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 0.7s forwards;
+  -webkit-animation: fill 0.7s forwards;
+  -moz-animation: fill 0.7s forwards;
+  opacity: 1;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #646E78;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../img/header.jpg");
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4%;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-left {
+  width: 10%;
+float: left;
+margin-top: 6px;
+margin-left: -334px;
+position: absolute;
+}
+
+.logo-right {
+  width: 10%;
+    float: right;
+    position: absolute;
+    margin-left: 207px;
+    margin-top: -111px;
+}
+
+.bg-text h1 {
+  font-family: 'Overpass', sans-serif;
+  text-transform: uppercase;
+}
+
+.bg-text p {
+  font-family: 'Mulish', sans-serif;
+}
+
+.row {
+  text-align: center;
+}
+
+.bg-row {
+  background: linear-gradient(to bottom, #add8e6 0%, #b0d6e3 100%);
+  width: 100%;
+}
+
+.nike-logo {
+  border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: 'Lekton', sans-serif;
+}
+
+.nike-logo:hover {
+  color: transparent;
+  background-image: url(../img/nike.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  transition: 0.5s ease-out;
+  position: relative;
+  text-align: center;
+}
+
+.adidas-logo {
+  border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: 'Lekton', sans-serif;
+}
+
+.adidas-logo:hover {
+  color: transparent;
+  background-image: url(../img/adidas.png);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  transition: 0.5s ease-out;
+  position: relative;
+  text-align: center;
+}
+
+.reebok-logo {
+  border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: 'Lekton', sans-serif;
+}
+
+.reebok-logo:hover {
+  color: transparent;
+  background-image: url(../img/reebok.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  transition: 0.5s ease-out;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 75px;
+  font-family: 'Overpass', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Overpass', sans-serif;
+}
+
+
+.nike {
+  width: 100%;
+  background: linear-gradient(to bottom, #b0d6e3 0%, #b7d3dc 100%);
+}
+
+.adidas {
+  width: 100%;
+  background: linear-gradient(to bottom, #b7d3dc 0%, #bad1d9 100%);
+}
+
+.reebok {
+  background: linear-gradient(to bottom, #bad1d9 0%, #c6ccce 100%);
+  width: 100%;
+}
+
+.nikeproducts {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.adidasproducts {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.reebokproducts {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.products p {
+  font-family: 'Mulish', sans-serif;
+}
+
+h4 {
+  font-size: 32px;
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+
+}
+
+.bg-orderform {
+  background: linear-gradient(to bottom, #c6ccce 0%, #d9c2ba 100%);
+  width: 100%;
+}
+
+.bg-orderform h2 {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.aboutus {
+  background: linear-gradient(to bottom, #d9c2ba 0%, #e6bbad 100%);
+  width: 100%;
+}
+
+.aboutus h2 {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.aboutus p {
+  margin: -10px 0px;
+  margin-left: 152px;
+  text-align: justify;
+}
+
+.aboutuspic {
+  width: 75%;
+  height: 100%;
+  margin-top: -85px;
+}
+
+.footerbg {
+  clear: both;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e6bbad;
+  color: #000;
+  border-top: 1px solid black;
+}
+
+.footer {
+  position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+    min-height: 80px;
+}
+
+.footer-left {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 432px;
+  text-align: justify;
+}
+
+.footer-right {
+  float: right;
+  text-align: right;
+}
+
+.email {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+.email::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #000;
+
+
+    width: 0%;
+
+    transition: all ease-in-out 0.5s;
+  }
+
+.email:hover::before {
+    width: 100%;
+  }
